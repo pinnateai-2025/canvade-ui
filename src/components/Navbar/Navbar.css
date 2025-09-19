@@ -15,7 +15,7 @@
 .navbar ul {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 50px;
     margin: 0;
     padding: 0;
 }
@@ -39,9 +39,67 @@
     gap: 30px;
 }
 
-.icon-sign img {
+.bell-icon img {
     width: 25px;
     height: 28px;
+    cursor: pointer;
+}
+
+.notification-container {
+    position: absolute;
+    top: 70px;
+    right: 250px;
+    width: 350px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    z-index: 1200;
+}
+
+.notification-container h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.notification-list {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.notification-item {
+    background: rgba(244, 247, 251, 1);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.notification-item p {
+    font-size: 14px;
+    margin: 0;
+    color: #444;
+}
+
+.notification-item strong {
+    color: #000000;
+}
+
+.notification-item span {
+    font-size: 12px;
+    color: #777;
+    display: block;
+    margin-top: 5px;
+}
+
+.see-more {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .sign-btn button {
@@ -160,6 +218,10 @@
         height: 40px;
         font-size: 18px;
     }
+
+    .notification-container {
+        right: 200px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -176,6 +238,29 @@
         width: 100px;
         height: 30px;
         font-size: 14px;
+    }
+
+    .notification-container {
+        top: 50px;
+        right: 170px;
+        width: 300px;
+        padding: 10px;
+    }
+
+    .notification-container h4 {
+        font-size: 14px;
+    }
+
+    .notification-item p {
+        font-size: 12px;
+    }
+
+    .notification-item span {
+        font-size: 11px;
+    }
+
+    .see-more {
+        font-size: 12px;
     }
 }
 
@@ -204,6 +289,12 @@
     .mobile-menu ul li a {
         font-size: 14px;
     }
+
+    .notification-container {
+        top: 50px;
+        right: 40px;
+        width: 250px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -225,5 +316,10 @@
 
     .hamburger {
         font-size: 18px;
+    }
+
+    .notification-container {
+        top: 45px;
+        right: 20px;
     }
 }
