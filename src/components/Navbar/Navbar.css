@@ -118,6 +118,10 @@
     transition: all 0.3s ease;
 }
 
+.sign-btn button:hover {
+    background-color: #1e40af;
+}
+
 .icon-hamburger {
     display: flex;
     align-items: center;
