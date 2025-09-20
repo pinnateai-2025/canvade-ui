@@ -1,0 +1,133 @@
+.partner-container {
+    width: 100%;
+    padding: 40px 180px;
+    background-color: #F4F7FB;
+}
+
+.partner-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.partner-heading h3 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.partner-heading span {
+    color: #2263DF;
+}
+
+.image-containers {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.image-containers img {
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+    .partner-container {
+        padding: 40px 20px;
+    }
+
+    .image-containers {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 900px) {
+    .image-containers img {
+        max-width: 120px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-heading h3 {
+        font-size: 30px;
+    }
+
+    .image-containers img {
+        max-width: 110px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .partner-heading h3 {
+        font-size: 26px;
+    }
+
+    .image-containers {
+        gap: 5  px;
+    }
+
+    .image-containers img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 500px) {
+    .partner-heading h3 {
+        font-size: 22px;
+    }
+
+    .image-containers img {
+        max-width: 60px;
+        max-height: 80px;
+    }
+}
+
+@media (max-width: 425px) {
+    .partner-heading h3 {
+        font-size: 19px;
+    }
+
+    .image-containers {
+        margin-top: 30px;
+    }
+
+    .image-containers img {
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    .partner-heading h3 {
+        font-size: 16px;
+    }
+
+    .image-containers img {
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+@media (max-width: 320px) {
+    .partner-heading h3 {
+        font-size: 13px;
+    }
+
+    .image-containers img {
+        max-width: 30px;
+        max-height: 30px;
+    }
+}
