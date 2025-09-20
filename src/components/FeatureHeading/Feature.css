@@ -1,0 +1,95 @@
+.feature-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 180px 70px 180px;
+    background: linear-gradient(
+        to bottom,
+        #F4F7FB 0px,      
+        #F4F7FB 150px,    
+        #FFFFFF 150px,    
+        #FFFFFF 400px     
+    );
+    place-items: center;
+}
+
+.features {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 40px 20px 20px 20px;
+    overflow: hidden;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Gradient backgrounds from Figma */
+.features1 {
+    background: linear-gradient(149.38deg, #2FC8E1 6.49%, #29C987 97.1%);
+}
+.features2 {
+    background: linear-gradient(148.91deg, #FFA326 2.86%, #FF662D 94.19%);
+}
+.features3 {
+    background: linear-gradient(148.58deg, #66D2FF 4.94%, #6D61FF 96.26%);
+}
+
+/* Glow overlays */
+.features::before,
+.features::after,
+.features .overlay {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+}
+
+.features::before {
+    background: linear-gradient(
+        62.33deg,
+        rgba(255, 255, 255, 0) 31.52%,
+        rgba(255, 255, 255, 0.35) 96.88%
+    );
+}
+.features::after {
+    background: linear-gradient(
+        62.33deg,
+        rgba(255, 255, 255, 0) 31.52%,
+        rgba(255, 255, 255, 0.25) 96.88%
+    );
+}
+.features .overlay {
+    background: linear-gradient(
+        62.33deg,
+        rgba(255, 255, 255, 0) 31.52%,
+        rgba(255, 255, 255, 0.15) 96.88%
+    );
+}
+
+/* Typography from Figma */
+.features h3 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 120%;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.features p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    position: relative;
+    z-index: 1;
+}
