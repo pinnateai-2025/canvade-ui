@@ -1,0 +1,249 @@
+.courses-container {
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 70px 300px 50px 300px;
+}
+
+.courses-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.courses-heading h3 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 120%;
+    letter-spacing: 0;
+}
+
+.courses-heading h3 span {
+    color: #2263DF;
+}
+
+.courses-heading p {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 140%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.courses-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.course-image {
+    background-color: #F4F7FB;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #D3D3D3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course-image img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+}
+
+.left-course-image,
+.right-course-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+}
+
+.main-course-image img {
+    width: 520px;
+    height: 320px;
+}
+
+.course-content p {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .courses-container {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .course-image img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .main-course-image img {
+        width: 420px;
+        height: 320px;
+    }
+}
+
+@media (max-width: 800px) {
+    .course-image img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .main-course-image img {
+        width: 350px;
+        height: 280px;
+    }
+
+    .course-content p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .courses-heading p {
+        font-size: 16px;
+        line-height: 120%;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 700px) {
+    .course-image {
+        padding: 10px;
+    }
+
+    .main-course-image img {
+        height: 220px;
+    }
+}
+
+@media (max-width: 600px) {
+    .courses-heading h3 {
+        font-size: 34px;
+        line-height: 100%;
+    }
+
+    .courses-heading p {
+        font-size: 14px;
+    }
+
+    .course-image img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .main-course-image img {
+        width: 260px;
+        height: 200px;
+    }
+
+    .course-content p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .courses-heading h3 {
+        font-size: 27px;
+    }
+
+    .courses-heading p {
+        font-size: 13px;
+    }
+
+    .courses-images {
+        flex-direction: column;
+    }
+
+    .left-course-image,
+    .right-course-image {
+        gap: 40px;
+    }
+
+    .course-image img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .main-course-image img {
+        width: 400px;
+        height: 250px;
+        margin: 20px 0;
+    }
+
+    .course-content {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 425px) {
+    .courses-container {
+        padding: 20px;
+    }
+
+    .courses-heading h3 {
+        font-size: 24px;
+    }
+
+    .courses-heading p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .courses-container {
+        padding: 10px;
+    }
+
+    .courses-heading h3 {
+        font-size: 23px;
+    }
+
+    .courses-heading p {
+        font-size: 12px;
+    }
+
+    .main-course-image img {
+        width: 350px;
+    }
+}
+
+@media (max-width: 320px) {
+    .courses-heading h3 {
+        font-size: 20px;
+    }
+
+    .courses-heading p {
+        font-size: 11px;
+    }
+
+    .main-course-image img {
+        width: 300px;
+        height: 200px;
+    }
+
+    .left-course-image,
+    .right-course-image {
+        gap: 20px;
+    }
+
+    .course-content {
+        width: 120px;
+        height: 120px;
+    }
+}

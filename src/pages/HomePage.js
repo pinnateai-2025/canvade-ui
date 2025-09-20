@@ -1,3 +1,4 @@
+import Courses from "../components/DemandCourses/Courses";
 import Partner from "../components/FeaturedPartner/Partner";
 import Feature from "../components/FeatureHeading/Feature";
 import Header from "../components/Header/Header";
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Header />
       <Feature />
       <Partner />
+      <Courses />
     </div>
   )
 }
