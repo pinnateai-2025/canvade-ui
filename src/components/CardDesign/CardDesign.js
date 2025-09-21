@@ -3,26 +3,20 @@ import "./CardDesign.css";
 import Star from "../../assets/star.png";
 import StarWhite from "../../assets/star-white.png";
 import Save from "../../assets/saved.png";
-import CardImg from "../../assets/card-img1.png";
-import CardImg2 from "../../assets/card-img2.jpg";
-import CardImg3 from "../../assets/card-img3.jpg";
-import CardImg4 from "../../assets/card-img4.jpg";
 
-const images = [CardImg, CardImg2, CardImg3, CardImg4];
-
-const CardDesign = ({ images, heading, info }) => {
+const CardDesign = ({ images, heading, subHeading, info, footerType = "button", footerText = "See Courses" }) => {
 
     const [currentImage, setCurrentImage] = useState(0);
 
-  useEffect(() => {
-    if (images && images.length > 1) {
-      const interval = setInterval(() => {
-        setCurrentImage((prev) => (prev + 1) % images.length);
-      }, 1000); 
+    useEffect(() => {
+        if (images && images.length > 1) {
+            const interval = setInterval(() => {
+                setCurrentImage((prev) => (prev + 1) % images.length);
+            }, 1000);
 
-      return () => clearInterval(interval);
-    }
-  }, [images]);
+            return () => clearInterval(interval);
+        }
+    }, [images]);
 
     return (
         <div className="card-container">
@@ -39,6 +33,7 @@ const CardDesign = ({ images, heading, info }) => {
                     </div>
                 </div>
                 <div className="card-heading">
+                    {subHeading && <p>{subHeading}</p>}
                     <h3>{heading}</h3>
                 </div>
                 <div className="card-info">
@@ -65,7 +60,11 @@ const CardDesign = ({ images, heading, info }) => {
                         </div>
                     </div>
                     <div className="saved">
-                        <button>See Courses</button>
+                        {footerType === "button" ? (
+                            <button>{footerText}</button>
+                        ) : (
+                            <p><strong>{footerText}</strong></p>
+                        )}
                         <img src={Save} alt="" />
                     </div>
                 </div>
