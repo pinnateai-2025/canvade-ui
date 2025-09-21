@@ -1,0 +1,25 @@
+.institutes-container {
+    width: 100%;
+    padding: 50px 220px;
+    background-color: #F4F7FB;
+}
+
+.institutes-heading h3 {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin: 30px 0;
+    color: #082A5E;
+}
+
+.institutes-heading h3 span {
+    color: #1363DF;
+}
+
+.institutes-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
