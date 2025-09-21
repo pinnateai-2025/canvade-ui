@@ -1,6 +1,5 @@
 .card-container {
     width: 100%;
-     /* padding: 30px 200px 50px 200px; */
 }
 
 .card-contents {
@@ -155,7 +154,40 @@
     justify-content: center;
 }
 
+.saved button:hover {
+    color: #1363DF;
+}
+
 .saved img {
     width: 21px;
-    height: 27px;
+    height: 25px;
+}
+
+@media (max-width: 600px) {
+    .card-contents {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .stars img {
+        width: 25px;
+        height: 22px;
+    }
+
+    .ratings .rating-text {
+        font-size: 12px;
+    }
+
+    .saved button {
+        width: 90px;
+        height: 25px;
+        font-size: 13px;
+    }
+
+    .saved img {
+        width: 18px;
+        height: 22px;
+    }
 }

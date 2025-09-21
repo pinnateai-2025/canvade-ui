@@ -23,3 +23,94 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
 }
+
+@media (max-width: 1024px) {
+    .institutes-container {
+        padding: 20px 0 20px 100px;
+    }
+
+    .institutes-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        place-content: center;
+        row-gap: 50px;
+        column-gap: 100px;
+    }
+}
+
+@media (max-width: 900px) {
+    .institutes-container {
+        padding: 20px 0 20px 50px;
+    }
+}
+
+@media (max-width: 800px) {
+    .institutes-container {
+        padding: 20px 0 20px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .institutes-container {
+        padding: 20px 0 20px 25px;
+    }
+
+    .institutes-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        place-content: center;
+        row-gap: 50px;
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .institutes-container {
+        padding: 20px 0 20px 25px;
+    }
+
+    .institutes-cards {
+        column-gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .institutes-container {
+        padding: 20px 0 20px 25px;
+    }
+
+    .institutes-cards {
+        row-gap: 20px;
+        column-gap: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .institutes-container {
+        padding: 20px;
+    }
+
+    .institutes-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .institutes-heading h3 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 375px) {
+    .institutes-heading h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .institutes-heading h3 {
+        font-size: 26px;
+    }
+}
