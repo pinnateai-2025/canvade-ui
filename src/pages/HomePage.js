@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import NearbyCourses from "../components/NearbyCourses/NearbyCourses";
 import Institutes from "../components/NearbyInstitutes/Institutes";
+import SearchedInstitutes from "../components/SearchedInstitutes/SearchedInstitutes";
 import Sticker from "../components/Sticker/Sticker";
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
       <Sticker />
       <Institutes />
       <NearbyCourses />
+      <SearchedInstitutes />
     </div>
   )
 }

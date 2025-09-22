@@ -1,19 +1,19 @@
 import Button from "../Button/Button";
 import CardDesign from "../CardDesign/CardDesign";
-import "./Institutes.css";
+import "./SearchedInstitutes.css";
 import CardImg from "../../assets/card-img1.png";
 import CardImg2 from "../../assets/card-img2.jpg";
 import CardImg3 from "../../assets/card-img3.jpg";
 import CardImg4 from "../../assets/card-img4.jpg";
 
-const Institutes = () => {
+const SearchedInstitutes = () => {
     return (
         <div className="institutes-container">
 
-            <Button text="180+ Institutes in Your Area" />
+            <Button text="180+ Institutes" />
 
             <div className="institutes-heading">
-                <h3>Your <span>Nearby</span> Institutes</h3>
+                <h3><span>Recently Searched</span> Institutes</h3>
             </div>
 
             <div className="institutes-cards">
@@ -71,4 +71,4 @@ const Institutes = () => {
     )
 }
 
-export default Institutes;
+export default SearchedInstitutes;
