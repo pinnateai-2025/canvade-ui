@@ -74,17 +74,6 @@
     }
 }
 
-@media (max-width: 768px) {
-    .institutes-container {
-        padding: 20px 0 20px 25px;
-    }
-
-    .institutes-cards {
-        row-gap: 20px;
-        column-gap: 0px;
-    }
-}
-
 @media (max-width: 600px) {
     .institutes-container {
         padding: 20px;

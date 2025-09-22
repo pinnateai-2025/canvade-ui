@@ -4,7 +4,8 @@ import Feature from "../components/FeatureHeading/Feature";
 import Header from "../components/Header/Header";
 import Navbar from "../components/Navbar/Navbar";
 import NearbyCourses from "../components/NearbyCourses/NearbyCourses";
-import Institutes from "../components/NearbyInstitutes/Institutes";
+import NearbyInstitutes from "../components/NearbyInstitutes/NearbyInstitutes";
+import SearchedCourses from "../components/SearchedCourses/SearchedCourses";
 import SearchedInstitutes from "../components/SearchedInstitutes/SearchedInstitutes";
 import Sticker from "../components/Sticker/Sticker";
 
@@ -17,9 +18,10 @@ const HomePage = () => {
       <Partner />
       <Courses />
       <Sticker />
-      <Institutes />
+      <NearbyInstitutes />
       <NearbyCourses />
       <SearchedInstitutes />
+      <SearchedCourses />
     </div>
   )
 }

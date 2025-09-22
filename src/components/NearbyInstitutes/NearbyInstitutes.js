@@ -1,12 +1,12 @@
 import Button from "../Button/Button";
 import CardDesign from "../CardDesign/CardDesign";
-import "./Institutes.css";
+import "./NearbyInstitutes.css";
 import CardImg from "../../assets/card-img1.png";
 import CardImg2 from "../../assets/card-img2.jpg";
 import CardImg3 from "../../assets/card-img3.jpg";
 import CardImg4 from "../../assets/card-img4.jpg";
 
-const Institutes = () => {
+const NearbyInstitutes = () => {
     return (
         <div className="institutes-container">
 
@@ -71,4 +71,4 @@ const Institutes = () => {
     )
 }
 
-export default Institutes;
+export default NearbyInstitutes;
